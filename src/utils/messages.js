@@ -1,3 +1,9 @@
+const mongoose =require('mongoose')
+const msgSchema = new mongoose.Schema({
+    message: String
+})
+const Msg = mongoose.model('msg', msgSchema) 
+
 const generateMessage = (username ,text) => {
     return {
         username,
@@ -16,5 +22,6 @@ const generateLocation = (username ,url) => {
 
 module.exports = {
     generateMessage,
-    generateLocation
+    generateLocation,
+    Msg
 }
