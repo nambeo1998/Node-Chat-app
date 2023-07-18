@@ -1,6 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const mongoDB = 'mongodb+srv://nambeo1998:lvnam1998@cluster0.fiflxtq.mongodb.net/message-db?retryWrites=true&w=majority'
+const mongoDB = 'mongodb+srv://nambeo1998:lvnam1998@cluster0.hyjntcs.mongodb.net/'
 mongoose.connect(mongoDB).then(() => {
     console.log('connected')
 }).catch(err => console.log(err))
